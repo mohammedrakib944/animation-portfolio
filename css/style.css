@@ -10,7 +10,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  cursor: none;
 }
 
 body {
@@ -32,6 +31,14 @@ body {
 }
 
 /* Navbar */
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -41,11 +48,6 @@ body {
 }
 .logo span:nth-child(2) {
   color: var(--secondary-color);
-}
-.navbar {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
 }
 .page-links {
   max-width: 400px;

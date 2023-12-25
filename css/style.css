@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap");
+:root {
+  --primary-color: #00ffc8;
+  --secondary-color: #ff006a;
+  --text-primary: #e0e0e0;
+  --text-netural: #8d8d8d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: none;
+}
+
+body {
+  background-color: rgb(9 9 11);
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-wrapper {
+  width: 100%;
+  background-image: radial-gradient(
+      63% 51% at -7% 43%,
+      #ff006a3b,
+      hsla(0, 0%, 100%, 0)
+    ),
+    radial-gradient(67% 88% at 81% 0%, #07ffca3d, hsla(0, 0%, 100%, 0));
+}
+
+/* Navbar */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.logo span:nth-child(1) {
+  color: var(--primary-color);
+}
+.logo span:nth-child(2) {
+  color: var(--secondary-color);
+}
+.navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.page-links {
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.page-links li {
+  list-style: none;
+}
+.page-links li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+.page-links li a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero */
+.hero-wrapper {
+  max-width: 700px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero-name {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+}
+.hero-title {
+  font-size: 4.6rem;
+  line-height: 72px;
+  padding: 20px 0;
+}
+.hero-text {
+  color: var(--text-netural);
+  padding: 10px;
+}
+.hero-text span {
+  color: var(--primary-color);
+  padding: 0 5px;
+}
+.hero-button {
+  margin-top: 50px;
+  padding: 16px 30px !important;
+  text-transform: uppercase;
+}

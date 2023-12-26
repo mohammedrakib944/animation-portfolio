@@ -11,3 +11,17 @@ function bounce(letter) {
     }, 1000);
   }
 }
+
+// cursor
+const cursor = document.querySelector(".cursor-dot");
+
+document.addEventListener("mousemove", (e) => {
+  if (e.target.tagName === "BUTTON" || e.target.tagName === "A") {
+    cursor.style.transform = "translate(-50%, -50%) scale(6)";
+  } else {
+    cursor.style.transform = "translate(-50%, -50%) scale(1)";
+  }
+
+  cursor.style.left = e.pageX + "px";
+  cursor.style.top = e.pageY + "px";
+});

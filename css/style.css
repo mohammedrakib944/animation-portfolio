@@ -10,7 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  cursor: none !important;
+  /* cursor: none !important; */
 }
 
 body {
@@ -34,11 +34,12 @@ body {
 /* Navbar */
 .navbar {
   width: 100%;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  bottom: 0;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 .logo {
   font-size: 1.5rem;
@@ -51,7 +52,12 @@ body {
   color: var(--secondary-color);
 }
 .page-links {
-  max-width: 400px;
+  width: fit-content;
+  background: rgb(0 0 0 / 15%);
+  border: 1px solid rgb(255 255 255 / 12%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +150,9 @@ body {
 .skill-6 {
   grid-column: 2/4;
 }
-.skill-grid :nth-last-child(-n + 3) {
-  /* This selects the last three items in the grid */
-  grid-row: span 2; /* Specify the desired span for the last row items */
+.skill-img-js {
+  width: 60%;
+}
+.skill-img-3 {
+  width: 100px;
 }

@@ -15,7 +15,7 @@
 body {
   width: 100%;
   overflow: hidden;
-  background-color: rgb(9 9 11);
+  background-color: rgb(6 9 9);
   color: aliceblue;
   font-family: "Roboto", sans-serif;
 }
@@ -79,10 +79,14 @@ body {
 .profile-image {
   width: 120px;
   height: 120px;
-  border: 2px solid var(--primary-color);
-  box-shadow: 5px 5px var(--secondary-color);
+  border: 2px solid var(--text-primary);
+  box-shadow: 0px 0px;
+  transition: all 0.3s ease;
   border-radius: 50%;
   margin-top: 4.5rem;
+}
+.profile-image:hover {
+  box-shadow: 5px 5px var(--secondary-color);
 }
 .hero-name {
   margin-top: 10px;
@@ -105,4 +109,41 @@ body {
   margin-top: 50px;
   padding: 16px 30px !important;
   text-transform: uppercase;
+}
+
+/* Skill section */
+.skill-section {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 7rem;
+  padding: 3rem 0;
+}
+.skill-grid {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+.skill-grid div {
+  min-height: 120px;
+  background: rgb(17 22 22);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.skill-1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.skill-2 {
+  grid-column: 3/5;
+}
+.skill-6 {
+  grid-column: 2/4;
+}
+.skill-grid :nth-last-child(-n + 3) {
+  /* This selects the last three items in the grid */
+  grid-row: span 2; /* Specify the desired span for the last row items */
 }

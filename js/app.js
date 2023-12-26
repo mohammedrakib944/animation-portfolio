@@ -1,4 +1,4 @@
-// Bouncing
+// Bouncing Letters
 document.querySelectorAll(".bouncing-letters>span").forEach((element) => {
   element.addEventListener("mouseover", (e) => bounce(e.target));
 });

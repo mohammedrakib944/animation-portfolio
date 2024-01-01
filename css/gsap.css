@@ -6,7 +6,10 @@
   opacity: 0;
 }
 #ecommerce,
-#blog_site {
-  transform: translateY(50px);
+#blog_site,
+#instagram,
+#todo,
+#movie {
+  transform: translateY(80px);
   opacity: 0;
 }

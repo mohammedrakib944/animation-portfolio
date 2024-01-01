@@ -43,23 +43,40 @@ gsap.to("#hero_links", {
 gsap.to("#blog_site", {
   y: 0,
   opacity: 1,
+  delay: 0.1,
   scrollTrigger: {
     trigger: "#blog_site",
-    start: "30% 80%",
-    end: "50% 70%",
-    scrub: 1,
-    markers: true,
   },
 });
 gsap.to("#ecommerce", {
   y: 0,
   opacity: 1,
-  delay: 3,
+  delay: 0.5,
   scrollTrigger: {
     trigger: "#ecommerce",
-    start: "30% 80%",
-    end: "50% 70%",
-    scrub: 3,
-    markers: true,
+  },
+});
+gsap.to("#instagram", {
+  y: 0,
+  opacity: 1,
+  delay: 2,
+  scrollTrigger: {
+    trigger: "#instagram",
+  },
+});
+gsap.to("#movie", {
+  y: 0,
+  opacity: 1,
+  delay: 1,
+  scrollTrigger: {
+    trigger: "#movie",
+  },
+});
+gsap.to("#todo", {
+  y: 0,
+  opacity: 1,
+  delay: 1.5,
+  scrollTrigger: {
+    trigger: "#todo",
   },
 });

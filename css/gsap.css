@@ -5,3 +5,8 @@
   scale: 0.9;
   opacity: 0;
 }
+#ecommerce,
+#blog_site {
+  transform: translateY(50px);
+  opacity: 0;
+}

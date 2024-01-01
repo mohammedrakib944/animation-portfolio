@@ -15,6 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 //   },
 // });
 
+// Hero Section
 gsap.to("#profile", {
   scale: 1,
   opacity: 1,
@@ -36,4 +37,29 @@ gsap.to("#hero_links", {
   scale: 1,
   opacity: 1,
   delay: 1.5,
+});
+
+// Projecet section
+gsap.to("#blog_site", {
+  y: 0,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: "#blog_site",
+    start: "30% 80%",
+    end: "50% 70%",
+    scrub: 1,
+    markers: true,
+  },
+});
+gsap.to("#ecommerce", {
+  y: 0,
+  opacity: 1,
+  delay: 3,
+  scrollTrigger: {
+    trigger: "#ecommerce",
+    start: "30% 80%",
+    end: "50% 70%",
+    scrub: 3,
+    markers: true,
+  },
 });

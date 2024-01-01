@@ -1,5 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
-let t1 = gsap.timeline({
+
+gsap.to("#skillJs", {
+  // x: 200,
+  opacity: 1,
+  scale: 1,
   scrollTrigger: {
     trigger: "#skillJs",
     start: "30% 80%", // when we start the animation
@@ -11,12 +15,6 @@ let t1 = gsap.timeline({
   },
 });
 
-t1.to("#skillJs", {
-  // x: 200,
-  opacity: 1,
-  scale: 1,
-});
-
 gsap.to("#profile", {
   scale: 1,
   opacity: 1,
@@ -25,17 +23,17 @@ gsap.to("#profile", {
 gsap.to("#bounce_text", {
   scale: 1,
   opacity: 1,
-  delay: 0.3,
+  delay: 1,
 });
 
 gsap.to("#about", {
   scale: 1,
   opacity: 1,
-  delay: 0.6,
+  delay: 0.5,
 });
 
 gsap.to("#hero_links", {
   scale: 1,
   opacity: 1,
-  delay: 0.9,
+  delay: 1.5,
 });

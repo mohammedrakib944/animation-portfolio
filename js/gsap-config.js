@@ -59,7 +59,7 @@ gsap.to("#ecommerce", {
 gsap.to("#instagram", {
   y: 0,
   opacity: 1,
-  delay: 2,
+  delay: 1.5,
   scrollTrigger: {
     trigger: "#instagram",
   },
@@ -67,7 +67,7 @@ gsap.to("#instagram", {
 gsap.to("#movie", {
   y: 0,
   opacity: 1,
-  delay: 1,
+  delay: 0.8,
   scrollTrigger: {
     trigger: "#movie",
   },
@@ -75,7 +75,7 @@ gsap.to("#movie", {
 gsap.to("#todo", {
   y: 0,
   opacity: 1,
-  delay: 1.5,
+  delay: 1.2,
   scrollTrigger: {
     trigger: "#todo",
   },

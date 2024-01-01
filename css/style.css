@@ -143,8 +143,7 @@ body {
   margin: 0 auto;
 }
 .project-card {
-  width: 600px;
-  height: 400px;
+  background: rgb(26 29 31 / 75%);
 }
 .card-stack {
   margin-top: 10px;

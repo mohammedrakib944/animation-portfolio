@@ -55,6 +55,11 @@
   animation-iteration-count: 1;
   display: inline-block;
 }
+@media screen and (max-width: 768px) {
+  .bouncing-letters span {
+    font-size: 3rem;
+  }
+}
 @keyframes bounce {
   20%,
   50%,

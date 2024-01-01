@@ -13,15 +13,25 @@ function bounce(letter) {
 }
 
 // cursor
-// const cursor = document.querySelector(".cursor-dot");
+const cursor = document.querySelector(".cursor-dot");
 
-// document.addEventListener("mousemove", (e) => {
-//   if (e.target.tagName === "BUTTON" || e.target.tagName === "A") {
-//     cursor.style.transform = "translate(-50%, -50%) scale(6)";
-//   } else {
-//     cursor.style.transform = "translate(-50%, -50%) scale(1)";
-//   }
+document.addEventListener("mousemove", (e) => {
+  if (e.target.tagName === "BUTTON" || e.target.tagName === "A") {
+    cursor.style.transform = "translate(-50%, -50%) scale(6)";
+  } else {
+    cursor.style.transform = "translate(-50%, -50%) scale(1)";
+  }
 
-//   cursor.style.left = e.pageX + "px";
-//   cursor.style.top = e.pageY + "px";
-// });
+  cursor.animate(
+    {
+      left: `${e.pageX}px`,
+      top: `${e.pageY}px`,
+    },
+    {
+      duration: 500,
+      fill: "forwards",
+    }
+  );
+  // cursor.style.left = e.pageX + "px";
+  // cursor.style.top = e.pageY + "px";
+});

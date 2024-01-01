@@ -31,7 +31,7 @@ document.addEventListener("mousemove", (e) => {
       top: `${e.pageY}px`,
     },
     {
-      duration: 500,
+      duration: 800,
       fill: "forwards",
     }
   );

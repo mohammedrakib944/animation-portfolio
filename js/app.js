@@ -21,17 +21,17 @@ document.addEventListener("mousemove", (e) => {
   } else {
     cursor.style.transform = "translate(-50%, -50%) scale(1)";
   }
-
-  cursor.animate(
-    {
-      left: `${e.pageX}px`,
-      top: `${e.pageY}px`,
-    },
-    {
-      duration: 500,
-      fill: "forwards",
-    }
-  );
-  // cursor.style.left = e.pageX + "px";
-  // cursor.style.top = e.pageY + "px";
+  // Animated
+  // cursor.animate(
+  //   {
+  //     left: `${e.pageX}px`,
+  //     top: `${e.pageY}px`,
+  //   },
+  //   {
+  //     duration: 500,
+  //     fill: "forwards",
+  //   }
+  // );
+  cursor.style.left = e.pageX + "px";
+  cursor.style.top = e.pageY + "px";
 });

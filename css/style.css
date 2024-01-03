@@ -5,10 +5,7 @@
   --text-primary: #e0e0e0;
   --text-netural: #8d8d8d;
 }
-html,
-body {
-  scroll-behavior: smooth;
-}
+
 * {
   margin: 0;
   padding: 0;

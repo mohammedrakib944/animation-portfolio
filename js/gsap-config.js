@@ -24,19 +24,19 @@ gsap.to("#profile", {
 gsap.to("#bounce_text", {
   scale: 1,
   opacity: 1,
-  delay: 1,
+  delay: 0.6,
 });
 
 gsap.to("#about", {
   scale: 1,
   opacity: 1,
-  delay: 0.5,
+  delay: 0.2,
 });
 
 gsap.to("#hero_links", {
   scale: 1,
   opacity: 1,
-  delay: 1.5,
+  delay: 0.8,
 });
 
 // Projecet section
@@ -51,7 +51,7 @@ gsap.to("#blog_site", {
 gsap.to("#ecommerce", {
   y: 0,
   opacity: 1,
-  delay: 0.5,
+  delay: 0.2,
   scrollTrigger: {
     trigger: "#ecommerce",
   },
@@ -59,7 +59,7 @@ gsap.to("#ecommerce", {
 gsap.to("#instagram", {
   y: 0,
   opacity: 1,
-  delay: 1.5,
+  delay: 0.8,
   scrollTrigger: {
     trigger: "#instagram",
   },
@@ -67,7 +67,7 @@ gsap.to("#instagram", {
 gsap.to("#movie", {
   y: 0,
   opacity: 1,
-  delay: 0.8,
+  delay: 0.4,
   scrollTrigger: {
     trigger: "#movie",
   },
@@ -75,7 +75,7 @@ gsap.to("#movie", {
 gsap.to("#todo", {
   y: 0,
   opacity: 1,
-  delay: 1.2,
+  delay: 0.6,
   scrollTrigger: {
     trigger: "#todo",
   },

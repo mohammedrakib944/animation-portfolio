@@ -108,3 +108,12 @@
   mix-blend-mode: difference;
   z-index: 1000;
 }
+
+.glowing {
+  width: 5rem;
+  transition: transform 0.3s ease-in-out;
+  background: rgb(255, 255, 255) !important;
+  transform: translate(-50%, -50%) scale(3) !important;
+  filter: blur(15px);
+  mix-blend-mode: overlay;
+}

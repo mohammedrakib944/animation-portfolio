@@ -41,8 +41,8 @@ body {
   padding-bottom: 30px;
   border-radius: 20px;
   font-family: "Noto Naskh Arabic", serif;
-  color: white;
-  background: rgba(49, 48, 48, 0.217);
+  color: rgb(113, 112, 112);
+  background: rgba(49, 48, 48, 0);
   background-position-x: 100px;
   text-align: center;
   z-index: 10;

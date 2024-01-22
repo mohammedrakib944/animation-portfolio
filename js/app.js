@@ -18,14 +18,19 @@ const cursorOutline = document.querySelector(".cursor-outline");
 const light = document.getElementById("light");
 
 document.addEventListener("mousemove", (e) => {
-  light.animate(
-    { left: `${e.clientX}px`, top: `${e.clientY}px` },
-    {
-      duration: 1000,
-      iterations: 1,
-      fill: "forwards",
-    }
-  );
+  if (e.target.id === "arabicText") {
+    cursorOutline.classList.add("glowing");
+  } else {
+    cursorOutline.classList.remove("glowing");
+  }
+  // light.animate(
+  //   { left: `${e.clientX}px`, top: `${e.clientY}px` },
+  //   {
+  //     duration: 1000,
+  //     iterations: 1,
+  //     fill: "forwards",
+  //   }
+  // );
 
   if (e.target.tagName === "BUTTON" || e.target.tagName === "A") {
     cursorOutline.style.transform = "translate(-50%, -50%) scale(1.6)";

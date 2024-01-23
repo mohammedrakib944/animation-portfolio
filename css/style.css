@@ -37,8 +37,6 @@ body {
 .arabic {
   width: full;
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 30px;
   border-radius: 20px;
   font-family: "Noto Naskh Arabic", serif;
   color: rgb(113, 112, 112);
